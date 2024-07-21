@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goth Music Picks</title>
+    <link rel="stylesheet" href="./genre-style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxi5fns.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><img src="./assets/FLECHITA_ATRAS_-removebg-preview.png" alt="" class="nav-lastpage"></a>
+        <a href=""><img src="./assets/MENU_BAR-removebg-preview.png" alt="" class="nav-menu">    </a>    
+    </nav>
+    <h2>People's picks for: </h2>
+    <h1>goth music</h1>
+    <div class="button">
+        <button id="showFormBtn">Add new</button>
+        <div id="overlay" class="overlay">   
+            <button id="closeFormBtn">X</button> 
+            <form class="propose-song">
+                <div class="page" id="page1">
+                    <label for="song-name">What's the name of the song?</label> <br>
+                    <div class="textInputWrapper"><input placeholder="Type here..." type="text" id="song-name"></div> <br>
+                    <button type="button" class="nextBtn" data-next="page2">Next</button>
+                </div>
+                <div class="page" id="page2">
+                    <label for="song-author">Who's the author of the song?</label> <br>
+                    <div class="textInputWrapper"><input placeholder="Type here..." type="text" id="song-author"></div> <br>
+                    <button type="button" class="prevBtn" data-prev="page1">Previous</button>
+                    <button type="button" class="nextBtn" data-next="page3">Next</button>
+                </div>
+                <div class="page" id="page3">
+                    <label for="song-link">Paste here the Spotify link: </label> <br>
+                    <div class="textInputWrapper"><input placeholder="Type here..." type="text" id="song-link"></div> <br>
+                    <button type="button" class="prevBtn" data-prev="page2">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="songs-container"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
