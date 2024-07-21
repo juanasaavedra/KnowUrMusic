@@ -58,28 +58,41 @@ a:active {
     box-sizing: border-box;
     border: 5px var(--black);
 }
-
+.clickable span {
+    min-width: 100%;
+}
 .goth-genre {
-    grid-area: 7 / 20 /10 / 22;
+    grid-area: 6 / 20 / 9 / 22;
+    justify-self: center;
 }
 
 .rock-genre {
     grid-area:10 / 14 / 12 / 16;
 }
 .metal-genre {
-    grid-area: 10 / 25 / 12 / 26;
+    grid-area: 10 / 25 / 12 / 28;
 }
 .punk-genre {
     grid-area: 20 / 15 / 22 / 17;
+    justify-self: center;
 }
 .grunge-genre {
-    grid-area: 20 / 30 / 22 / 32;
+    grid-area: 24 / 29 / 27 / 31;
+    justify-self: center;
+    padding: 10px 40px;
 }
 .Post-punk-genre {
-    grid-area: 30 / 28 / 32 / 30;
+    grid-area: 18 / 35 / 21 / 37;
+    padding: 30px;
+
 }
 .shoegaze-genre {
-    grid-area: 32 / 12 / 34 / 13;
+    grid-area: 29 / 10 / 31 / 15;
+    padding: 10px 60px;
+    justify-self: center;
+}
+.all-music-genre {
+    grid-area: 36 / 20 / 39 / 22;
 }
 .area-label {
     position: absolute;
